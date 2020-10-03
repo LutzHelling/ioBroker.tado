@@ -651,6 +651,24 @@ class Tado extends utils.Adapter {
 
 				case ('consentGrantSkippable'):
 					break;
+					
+				case ('legacyHeatingInstallationsEnabled'):
+					this.create_state(HomeId + '._info. ' + i, i, this.Home_data[i]);
+					break;
+					
+				case ('incidentDetection'):
+					await this.setObjectNotExistsAsync(HomeId + '._info.incidentDetection', {
+						type: 'channel',
+						common: {
+							name: 'Incident Detection',
+						},
+						native: {},
+					});
+
+					for (const y in this.Home_data[i]){
+						this.create_state(HomeId + '._info.incidentDetection.' + y, y, this.Home_data[i][y]);
+					}
+					break;
 
 				case ('legacyHeatingInstallationsEnabled'):
 					break;
@@ -1106,6 +1124,24 @@ class Tado extends utils.Adapter {
 
 					case ('shortSerialNo'):
 						this.create_state(state_root_device + '.' + y, y, Devices_data[i][y]);
+						break;
+					
+					case ('commandTableUploadState'):
+						this.create_state(state_root_device + '.' + y, y, Devices_data[i][y]);
+						break;
+
+					case ('accessPointWiFi'):
+						await this.setObjectNotExistsAsync(state_root_device +  '.'  + y, {
+							type: 'channel',
+							common: {
+								name: y,
+							},
+							native: {},
+						});
+						
+						for (const x in Devices_data[i][y]){
+							this.create_state(state_root_device + '.' + y + '.' + x, y, Devices_data[i][y][x]);
+						}
 						break;
 
 					case ('accessPointWiFi'):

@@ -5,6 +5,7 @@
 [![Downloads](https://img.shields.io/npm/dm/iobroker.tado.svg)](https://www.npmjs.com/package/iobroker.tado)
 [![Dependency Status](https://img.shields.io/david/iobroker-community-adapters/iobroker.tado.svg)](https://david-dm.org/iobroker-community-adapters/iobroker.tado)
 [![Known Vulnerabilities](https://snyk.io/test/github/iobroker-community-adapters/ioBroker.tado/badge.svg)](https://snyk.io/test/github/iobroker-community-adapters/ioBroker.tado)
+[![Translation status](https://weblate.iobroker.net/widgets/adapters/-/tado/svg-badge.svg)](https://weblate.iobroker.net/engage/adapters/?utm_source=widget)
 
 [![NPM](https://nodei.co/npm/iobroker.tado.png?downloads=true)](https://nodei.co/npm/iobroker.tado/)
 
@@ -20,8 +21,26 @@ If you like my work, please feel free to provide a personal donation
 [![Donate](https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.tado/master/admin/button.png)](http://paypal.me/DutchmanNL)
 
 ## Changelog
+<<<<<<< HEAD
 ### 0.2.0
 * (LutzHelling) Added new information "accessPointWiFi" and "commandTableUploadState"
+=======
+<!--
+    Placeholder for the next version (at the beginning of the line):
+    ## __WORK IN PROGRESS__
+-->
+
+### 0.2.0 (2020-09-29)
+* (DutchmanNL) Update dependency's
+* (DutchmanNL) Update testing, remove node 8 and add node 14
+* (DutchmanNL) Implement automated deployment with githubActions
+* (HGlab01) Support incident Detection
+* (LutzHelling) Bugfix : Add orientation
+* (LutzHelling) Bugfix : legacyHeatingInstallationsEnabled
+* (HGlab01) Bugfix : Add legacyHeatingInstallationsEnabled to DoHome
+* (HGlab01) Bugfix : Fix unhandled information found in DoReadDevices 
+
+>>>>>>> upstream/master
 ### 0.1.9
 * (DutchmanNL) Implement Sentry
 * (DutchmanNL) Bugfix : Better error handling
