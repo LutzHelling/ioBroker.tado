@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "tado",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "news": {
+            "0.2.1" {
+                "en": "Added incidentDetection",
+                "de": "Ergänzung incidentDetection"
+            },
             "0.2.0": {
                 "en": "Added accessPointWiFi and commandTableUploadState",
                 "de": "Ergänzung accessPointWiFi und commandTableUploadState"
