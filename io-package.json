@@ -4,8 +4,8 @@
         "version": "0.2.1",
         "news": {
             "0.2.1": {
-                "en": "Added incidentDetection",
-                "de": "Ergänzung incidentDetection"
+                "en": "Added incidentDetection, autoAssistFreeTrialEnabled",
+                "de": "Ergänzung incidentDetection, autoAssistFreeTrialEnabled"
             },
             "0.2.0": {
                 "en": "Added accessPointWiFi and commandTableUploadState",

@@ -675,7 +675,10 @@ class Tado extends utils.Adapter {
 
 				case ('incidentDetection'):
 					break;
-					
+
+				case ('autoAssistFreeTrialEnabled'):
+					break;
+
 				default:
 					this.log.error('Send this info to developer !!! { Unhandable information found in DoHome : ' + JSON.stringify(i) + ' with value : ' + JSON.stringify(this.Home_data[i]));
 
