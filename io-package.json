@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "tado",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "news": {
+            "0.2.2": {
+                "en": "childLockEnabled added",
+                "de": "childLockEnabled ergänzt"
+            },
             "0.2.1": {
                 "en": "Added incidentDetection, autoAssistFreeTrialEnabled",
                 "de": "Ergänzung incidentDetection, autoAssistFreeTrialEnabled"
